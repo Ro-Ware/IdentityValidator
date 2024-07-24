@@ -2,8 +2,8 @@
 IdentityValidator checks if your executor is faking printidentity or not.
 
 # Checks
-- printidentitynotcclosure
-    - Printidentity is not a cclosure
+- printidentitycclosure
+    - Checks if printidentity is a cclosure
 - getthreadidentitynotequal
     - getthreadidentity is not equal to printidentity level
 - invalididentity

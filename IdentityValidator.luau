@@ -88,8 +88,8 @@ test("printidentitylowargs", function()
 	if not success then return error("printidentity is missing prefix argument") end
 end)
 
--- prntidentitynotcclosure
-test("printidentitynotcclosure", function()
+-- prntidentityclosure	
+test("printidentitycclosure", function()
 	if not iscclosure(printidentity) then
 		return error("printidentity is not a cclosure")
 	end
@@ -112,8 +112,8 @@ test("invalididentity", function()
 
 	local identity = getthreadidentity()
 
-	if PrintidentityLevel > 9 or PrintidentityLevel < 0 then return error("[printidentity] Your executor's spoofed identity is invalid.") end
-	if identity > 9 or identity < 0 then return error("[getthreadidentity] Your executor's spoofed identity is invalid.") end
+	if PrintidentityLevel > 8 or PrintidentityLevel < 0 then return error("[printidentity] Your executor's spoofed identity is invalid.") end
+	if identity > 8 or identity < 0 then return error("[getthreadidentity] Your executor's spoofed identity is invalid.") end
 end)
 
 -- identitycheck
@@ -147,7 +147,7 @@ test("identitycheck", function()
 		{
 			lv = 7,
 			obtained = pcall(function() Instance.new("MeshPart").MeshId = "" end)
-		} -- there might be a issue with level 8, lmao
+		} -- there might be a issue with level 8
 	}
 	
 	for i, identity in pairs(IdentityTable) do

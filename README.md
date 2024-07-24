@@ -1,0 +1,21 @@
+# IdentityValidator
+IdentityValidator checks if your executor is faking printidentity or not.
+
+# Checks
+- printidentitynotcclosure
+    - Printidentity is not a cclosure
+- getthreadidentitynotequal
+    - getthreadidentity is not equal to printidentity level
+- invalididentity
+    - if identity is lower than 0 or higher than 9
+- printidentitylowargs
+    - printidentity does not have the prefix arg
+- identitycheck
+    - MoreUNC's getthreadidentity function used 
+
+# Credits
+- UNC NamingStandard: UNCCheckEnv @ https://github.com/unified-naming-convention/NamingStandard/blob/main/UNCCheckEnv.lua
+- MoreUNC v2.0.0: for getthreadidentity @ https://rawscripts.net/raw/Universal-Script-MoreUNC-V2-15902
+
+# Note
+im still learning shi', if u want, you can pr 🙏

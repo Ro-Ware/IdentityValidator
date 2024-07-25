@@ -11,7 +11,7 @@ IdentityValidator checks if your executor is faking printidentity or not.
 - printidentitylowargs
     - printidentity does not have the prefix arg
 - identitycheck
-    - MoreUNC's getthreadidentity function used 
+    - MoreUNC's getthreadidentity function used to tell if the identity is being faked or not
 
 # Credits
 - UNC NamingStandard: UNCCheckEnv @ https://github.com/unified-naming-convention/NamingStandard/blob/main/UNCCheckEnv.lua
@@ -19,3 +19,5 @@ IdentityValidator checks if your executor is faking printidentity or not.
 
 # Note
 im still learning shi', if u want, you can pr 🙏
+
+u can fork this, but dont modify anything and credit me, and possibly everyone i credit 👍
